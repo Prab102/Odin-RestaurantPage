@@ -1,3 +1,4 @@
+import placeholder from "./pizzamenuimgs/placeholder.jpg"
 
 function menu(){
    
@@ -24,7 +25,7 @@ function menu(){
 
     content.appendChild(contact);
 
-    //card pizza style
+    //card for contacts
     const  block= document.createElement("div");
     block.id = "contactblock";
     // menublock.innerHTML ="testing";
@@ -42,10 +43,33 @@ function menu(){
     img1cont.id ="img1";
     contact1.appendChild(img1cont);
 
-    // const img1text = document.createElement("h2");
-    // img1text.id = "img1text";
-    // img1text.innerHTML ="This new York Style Pizza has a classic taste to the origin of great pizza";
-    // menuitem1.appendChild(img1text);
+    const owner = new Image();
+    owner.src = placeholder;
+    owner.style.height = "200px";
+    owner.style.width = "250px";
+        
+    img1cont.appendChild(owner);
+
+
+
+    //jobtitle
+    const job = document.createElement("p");
+    job.setAttribute("class","jobtitle");
+    job.innerHTML ="Restaurant Owner";
+    contact1.appendChild(job);
+
+    //name
+    const name = document.createElement("p");
+    name.setAttribute("class","name");
+    name.innerHTML = "John Hammond";
+    job.appendChild(name);
+
+    //phone# 
+    const phone = document.createElement("p");
+    phone.setAttribute("class","phone");
+    phone.innerHTML =" Phone: 123-123-1234";
+
+    name.appendChild(phone);
 
     // const img1name = document.createElement("h1");
     // img1name.id = "img1name";

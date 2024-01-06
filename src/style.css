@@ -155,43 +155,53 @@ body{
 #menublock{
   display:flex;
   flex-direction: column;
-  border: 1px red solid;
+  /* border: 1px red solid; */
   width: 600px;
   margin:auto;
+  gap:20px
 }
 #menublock2{
 
   display:flex;
   flex-direction: column;
-  border: 1px red solid;
+  /* border: 1px red solid; */
   width: 600px;
   margin:auto;
+  gap:20px
 
 }
 /* could just make a class for menublocks */
 #menublock3{
   display:flex;
   flex-direction: column;
-  border: 1px red solid;
+  /* border: 1px red solid; */
   width: 600px;
   margin:auto;
+  gap:20px
 
 }
 /* pizza items */
+/* added height values */
 #menuitem{
   display:flex;
-  border:1px white solid;
+  border:1px lightgray solid;
+  border-radius: 10px;
+  height: 200px;
+  
 }
 #toppingitem{
   display:flex;
   border:1px white solid;
+  border-radius: 10px;
 }
 #sideitem{
   display:flex;
   border:1px white solid;
+  border-radius: 10px;
 }
 #img1{
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+  border-top-left-radius: 10px;
   height: 200px;
   width: 300px;
 }
@@ -203,11 +213,25 @@ body{
 #contactblock{
   display:flex;
   flex-direction: column;
-  border: 1px red solid;
+  /* border: 1px red solid; */
   width: 600px;
   margin:auto;
 }
 #contactitem{
   display:flex;
   border:1px white solid;
+}
+.jobtitle{
+  text-align: center;
+  margin-left: 50px;
+  font-size: 24px;
+}
+.phone{
+  text-align: left;
+  font-size: 18px;
+}
+.name{
+  text-align: left;
+  font-size: 18px;
+  
 }
